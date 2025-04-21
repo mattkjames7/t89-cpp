@@ -11,7 +11,7 @@ lib:
 	cd src; make all
 
 test:
-	cd old-test; make all
+	cd tests; make all
 
 
 clean:
