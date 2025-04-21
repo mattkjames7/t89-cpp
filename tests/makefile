@@ -12,8 +12,8 @@ LDFLAGS=-lm -Wl,-rpath='$$ORIGIN/../lib' -L ../lib -lt89
 
 
 all:
-	$(FF) -o t89c.o T89c.f 
-	$(CXX) -o testfortran testfortran.cc t89c.o $(LDFLAGS)
-	LD_LIBRARY_PATH=../lib ./testfortran
-	-rm -v t89c.o
-	-rm -v testfortran
+    $(FF) -o t89c.o T89c.f 
+    $(CXX) -o testfortran testfortran.cc t89c.o $(LDFLAGS)
+    LD_LIBRARY_PATH=../lib ./testfortran
+    -rm -v t89c.o
+    -rm -v testfortran
